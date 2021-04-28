@@ -5,46 +5,38 @@ using UnityEngine;
 //Class responsible for managing a basic game of TicTacToe
 public class OneDimGameManager : MonoBehaviour
 {
-    //Players, who have methods specific to the game
-    Player playerX, playerO;
-    int[,] gameState = new int[3,3]{ 
-        {0,0,0},
-        {0,0,0},
-        {0,0,0},
-        };
-    bool gameOver = false;
-    // Start is called before the first frame update
-    void Start()
+    /**VARIABLES**/
+    public Player[] players; //Players used in game
+    public GameBoard gameBoard; //Gameboard used in the game
+    /**METHODS**/
+
+    //Initialize the game and gets everything set up
+    public int newGame()
     {
-        
+        return 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    //Loads the game board and starts the game
-    private void StartGame()
+    //Sets the player who is going and sets things up to wait for action input
+    public void nextTurn()
     {
 
     }
 
-    //Processes a player's turn, checks if the game is over, and updates the game state
-    private void Turn(Player player)
+    //Checks the input and see if it is valid
+    //Returns: 0 = bad input, 1 = valid
+    public int processInput()
     {
-        
+        return 1;
     }
 
-    //Check if the game is over
-    private void CheckGame()
+    //Checks the state of the game and if it is over
+    public void checkGame()
     {
 
     }
 
-    //Update the game board
-    private void UpdateGameBoard()
+    //Display results of game and promt user input
+    public void gameOver()
     {
 
     }
